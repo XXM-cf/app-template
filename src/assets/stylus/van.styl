@@ -1,0 +1,56 @@
+// vant-ui 重置样式
+
+$--tabs-height = 2.6rem
+
+// tabs
+.van-tabs.hekr-tabs--colorful
+  padding-top $--tabs-height
+  .van-tabs__wrap
+    height $--tabs-height
+    &:after
+      display none
+  .van-tabs__line
+    background-color #ffffff
+    height 0.15rem
+  .van-tab
+    line-height $--tabs-height
+    background-color $--hc-main
+    color #c7d2ff
+  .van-tab--active
+    color #ffffff
+
+.van-tabs--card
+  padding-top 2.4rem
+  .van-tabs__wrap
+    height 2.4rem
+    background #ffffff
+    .van-tabs__nav--card
+      margin 0.45rem 0.75rem
+      border-radius 0.4rem
+      border-color #46a7fb
+      .van-tab
+        color #46a7fb
+        border-right none
+        &:first-of-type
+          border-radius 0.4rem 0 0 0.4rem
+        &:last-of-type
+          border-radius 0 0.4rem 0.4rem 0
+        &.van-tab--active
+          background-image linear-gradient(-134deg, #236de5 0%, #46a7fb 100%)
+          color #ffffff
+
+.van-cell-group
+  background #ffffff
+  margin $--hk-margin
+  padding $--hk-padding
+  border-radius $--hk-radius
+
+.van-cell--borderless::after
+  display block
+
+.van-tag
+  .van-tag--danger
+    background-image linear-gradient(-206deg, #ff7e8a 0%, #ffb869 100%)
+  .van-tag--success
+    background-image linear-gradient(-135deg, #05c447 0%, #54e176 100%)
+
